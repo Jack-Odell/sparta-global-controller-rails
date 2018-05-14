@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ControllerHw</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-nav nav-width container-fluid">
+          <ul class="list-inline">
+            <h4>Food</h4>
+            <li><a href="/food/bread">Bread</a></li>
+            <li><a href="/food/pasta">Pasta</a></li>
+            <li><a href="/food/rice">Rice</a></li>
+            <li><a href="/food/cheese">Cheese</a></li>
+          </ul>
+          <ul class="list-inline">
+            <h4>Drink</h4>
+            <li><a href="/drink/beer">Beer</a></li>
+            <li><a href="/drink/wine">Wine</a></li>
+            <li><a href="/drink/soda">Soda</a></li>
+            <li><a href="/drink/water">Water</a></li>
+          </ul>
+          <ul class="list-inline">
+            <h4>Cutlery</h4>
+            <li><a href="/cutlery/fork">Fork</a></li>
+            <li><a href="/cutlery/knife">Knife</a></li>
+            <li><a href="/cutlery/spoon">Spoon</a></li>
+            <li><a href="/cutlery/chopstick">Chopstick</a></li>
+          </ul>
+          <ul class="list-inline">
+            <h4>Staff</h4>
+            <li><a href="/staff/bar_tender">Bar Tenders</a></li>
+            <li><a href="/staff/waiter">Waiters</a></li>
+            <li><a href="/staff/dishwasher">Dishwashers</a></li>
+            <li><a href="/staff/chef">Chefs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="">
+      <%= yield %>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </div>
+  </body>
+</html>
